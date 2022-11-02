@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #42b4ca;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.current-player {
+  margin: 5px 0px;
+  color: #b0da0c;
+}
+
+#avatar {
+  max-width: 50px;
+  max-height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.board {
+  margin: 0 auto;
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  grid-template-rows: repeat(3, 130px);
+  justify-content: center;
+  align-content: center;
+}
+
+.block {
+  border: 2px solid #c5e154;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-block:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 6px 8px -5px;
+  transform: translate3d(0, 3px, 0);
+}
+
+.empty-block:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 6px 4px -7px;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  text-align: center;
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #8cc048;
+  color: white;
+}
+
+.modal-header h2 {
+  margin: 2.5%;
+}
+
+.modal-body {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.modal-body img {
+  max-width: 80px;
+  max-height: 80px;
+  padding-top: 3px;
+  padding-bottom: 25px;
+}
+
+.label-x {
+  display: block;
+}
+
+.label-o {
+  display: block;
+}
+
+.play-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.tiny-rick {
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/tinyrick avatar.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pickle-rick {
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/picklerick avatar.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+}
+
+.chosen-avatar {
+  display: none;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

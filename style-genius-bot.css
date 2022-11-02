@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  font-family: "Figtree", sans-serif, "Tahoma";
+}
+
+.container {
+  text-align: center;
+}
+
+.game-name {
+  margin: 0px;
+  margin-top: 30px;
+}
+
+.current-player {
+  margin: 15px 0px;
+}
+
+.board {
+  margin: 0 auto;
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  grid-template-rows: repeat(3, 130px);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.block {
+  border: 1.5px solid black;
+}
+
+.flip-card-inner {
+  width: 98%;
+  height: 98%;
+  font-size: 100px;
+  font-family: "Acme", sans-serif, "Tahoma";
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: rotateY(180deg);
+}
+
+.flip-blue {
+  background-color: rgb(96, 143, 184);
+  transform: rotateY(180deg);
+}
+.flip-red {
+  background-color: rgb(247, 99, 73);
+  transform: rotateY(180deg);
+}
+
+/* .empty-block:hover {
+  box-shadow: 0px 7px 0px 0px gold;
+  transform: scaleX(1);
+  cursor: pointer;
+} */
+
+.empty-block {
+  display: inline-block;
+  position: relative;
+}
+
+.empty-block:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.empty-block:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

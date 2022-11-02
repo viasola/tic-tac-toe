@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Normal</title>
+    <link rel="stylesheet" href="style-normal-bot.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="game-name">Tic Tac Toe</h1>
+      <span>Simple Bot Ver. </span>
+      <div class="display-turn">
+        <h3 class="current-play">Current Player: <span class="turn"></span></h3>
+      </div>
+      <div>
+        <p class="item" id="item" draggable="true">X</p>
+      </div>
+      <div class="board">
+        <div class="block" data-id="0" id="0"></div>
+        <div class="block" data-id="1" id="1"></div>
+        <div class="block" data-id="2" id="2"></div>
+        <div class="block" data-id="3" id="3"></div>
+        <div class="block" data-id="4" id="4"></div>
+        <div class="block" data-id="5" id="5"></div>
+        <div class="block" data-id="6" id="6"></div>
+        <div class="block" data-id="7" id="7"></div>
+        <div class="block" data-id="8" id="8"></div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <p>You Won!</p>
+          <!-- <span class="close">&times;</span> -->
+          <input class="close" type="button" value="Close" />
+        </div>
+      </div>
+
+      <h3 class="announce-results">Results:</h3>
+      <sec class="results-count">
+        <p>Player X: <span class="x-count">0</span></p>
+        <p>Player O: <span class="o-count">0</span></p>
+        <p>Draws: <span class="draw-count">0</span></p>
+      </sec>
+      <button onclick="startGame()" class="restart-btn">Restart Game</button>
+    </div>
+    <script src="ttt-normal-bot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style-players.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Pick an Avatar:</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="player-x" class="label-x"
+              ><input type="radio" id="player-x" value="x" name="players" />Tiny
+              Rick X
+            </label>
+            <img
+              id="tiny-rick"
+              src="./img/tinyrick avatar.jpeg"
+              alt="Tiny Rick"
+            />
+
+            <label for="player-o" class="label-o">
+              <input
+                type="radio"
+                id="player-o"
+                value="o"
+                name="players"
+              />Pickle Rick O
+            </label>
+            <img
+              id="pickle-rick"
+              src="./img/picklerick avatar.jpeg"
+              alt="Pickle Rick"
+            />
+
+            <input
+              type="button"
+              onclick="selectAvatar()"
+              class="play-button"
+              value="Play"
+            />
+
+            <a href="index.html">Back to Homepage</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="game-name">Time to get schwifty.</h1>
+      <div class="display-turn">
+        <h3 class="current-player">
+          Current Player: <span class="turn"></span>
+        </h3>
+        <img id="avatar" />
+        <div class="chosen-avatar"></div>
+      </div>
+      <div class="board">
+        <div class="block" data-id="0" id="0"></div>
+        <div class="block" data-id="1" id="1"></div>
+        <div class="block" data-id="2" id="2"></div>
+        <div class="block" data-id="3" id="3"></div>
+        <div class="block" data-id="4" id="4"></div>
+        <div class="block" data-id="5" id="5"></div>
+        <div class="block" data-id="6" id="6"></div>
+        <div class="block" data-id="7" id="7"></div>
+        <div class="block" data-id="8" id="8"></div>
+      </div>
+
+      <h3 class="announce-results">Results:</h3>
+      <sec class="results-count">
+        <p>Tiny Rick: <span class="x-count">0</span></p>
+        <p>Pickle Rick: <span class="o-count">0</span></p>
+        <p>Draws: <span class="draw-count">0</span></p>
+      </sec>
+      <button onclick="startGame()" class="restart-btn">Restart Game</button>
+      <button onclick="resetScore()" class="reset-btn">Reset Score</button>
+      <button onclick="changeAvatar()" class="avatar-btn">Change Avatar</button>
+    </div>
+    <script src="ttt-players.js"></script>
+  </body>
+</html>

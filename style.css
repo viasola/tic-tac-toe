@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.board {
+  margin: 0 auto;
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  grid-template-rows: repeat(3, 130px);
+  justify-content: center;
+  align-content: center;
+  /* justify-items: center; */
+  /* align-items: center; */
+  padding: 20px;
+}
+
+.block {
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.choose-mode a {
+  display: block;
+}
