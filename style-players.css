@@ -116,6 +116,7 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
   padding: 5px 10px;
+  font-size: 16px;
 }
 
 .play-btn:hover {
@@ -128,11 +129,19 @@ body {
   color: black;
   border-radius: 3px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .homepage-btn:hover {
   background-color: #3a9bae;
+}
+
+.restart-btn {
+  margin-right: 10px;
+}
+
+.avatar-btn {
+  margin-left: 10px;
 }
 
 .tiny-rick {
@@ -190,26 +199,26 @@ button:hover {
   }
 
   .modal-content {
-    width: 70%;
+    width: 80%;
   }
 
   .game-name {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .current-player {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .announce-results {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .results-count {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   button {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
