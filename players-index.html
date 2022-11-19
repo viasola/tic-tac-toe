@@ -42,11 +42,11 @@
             <input
               type="button"
               onclick="selectAvatar()"
-              class="play-button"
+              class="play-btn"
               value="Play"
             />
 
-            <a href="index.html">Back to Homepage</a>
+            <a href="index.html" class="homepage-btn">Back to Homepage</a>
           </form>
         </div>
       </div>
@@ -72,15 +72,16 @@
         <div class="block" data-id="8" id="8"></div>
       </div>
 
+      <button onclick="startGame()" class="restart-btn">Restart Game</button>
+      <button onclick="changeAvatar()" class="avatar-btn">Change Avatar</button>
+
       <h3 class="announce-results">Results:</h3>
       <sec class="results-count">
         <p>Tiny Rick: <span class="x-count">0</span></p>
         <p>Pickle Rick: <span class="o-count">0</span></p>
         <p>Draws: <span class="draw-count">0</span></p>
       </sec>
-      <button onclick="startGame()" class="restart-btn">Restart Game</button>
       <button onclick="resetScore()" class="reset-btn">Reset Score</button>
-      <button onclick="changeAvatar()" class="avatar-btn">Change Avatar</button>
     </div>
     <script src="ttt-players.js"></script>
   </body>

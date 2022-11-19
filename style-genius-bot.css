@@ -86,3 +86,84 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.restart-btn {
+  margin-right: 12px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  padding: 3px 9px;
+  font-size: 16px;
+}
+
+.restart-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.homepage-btn {
+  text-decoration: none;
+  background-color: #7ed068;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+
+.homepage-btn:hover {
+  background-color: #50af36;
+}
+
+@media screen and (max-width: 600px) {
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .game-name {
+    font-size: 10px;
+  }
+
+  span {
+    font-size: 8px;
+  }
+
+  .current-player {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-size: 8px;
+  }
+
+  .announce-results {
+    font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .restart-btn {
+    font-size: 10px;
+  }
+
+  .homepage-btn {
+    font-size: 10px;
+  }
+
+  .endgame {
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+
+  .results-count {
+    font-size: 8px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+}

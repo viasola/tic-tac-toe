@@ -26,6 +26,7 @@ startGame();
 
 function startGame() {
   document.querySelector(".endgame").style.display = "none";
+  currentPlayer.style.display = "block";
   currentPlayer.innerText = "Current Player: X";
   oriBoard = Array.from(Array(9).keys());
   for (var i = 0; i < blocks.length; i++) {

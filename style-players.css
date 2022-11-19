@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   background-color: #42b4ca;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -32,6 +32,7 @@ body {
   grid-template-rows: repeat(3, 130px);
   justify-content: center;
   align-content: center;
+  margin-bottom: 10px;
 }
 
 .block {
@@ -105,9 +106,33 @@ body {
   display: block;
 }
 
-.play-button {
+.play-btn {
   display: block;
   margin: 0 auto;
+  margin-bottom: 12px;
+  background-color: #b0da0c;
+  border: none;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.play-btn:hover {
+  background-color: #a3c90b;
+}
+
+.homepage-btn {
+  text-decoration: none;
+  background-color: #42b4ca;
+  color: black;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.homepage-btn:hover {
+  background-color: #3a9bae;
 }
 
 .tiny-rick {
@@ -133,6 +158,19 @@ body {
   display: none;
 }
 
+button {
+  background-color: powderblue;
+  border: none;
+  border-radius: 3px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: steelblue;
+}
+
 @keyframes animatetop {
   from {
     top: -300px;
@@ -141,5 +179,37 @@ body {
   to {
     top: 0;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+  }
+
+  .modal-content {
+    width: 70%;
+  }
+
+  .game-name {
+    font-size: 10px;
+  }
+
+  .current-player {
+    font-size: 8px;
+  }
+
+  .announce-results {
+    font-size: 8px;
+  }
+
+  .results-count {
+    font-size: 8px;
+  }
+
+  button {
+    font-size: 10px;
   }
 }
