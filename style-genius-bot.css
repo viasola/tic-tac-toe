@@ -126,44 +126,44 @@ body {
   }
 
   .game-name {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   span {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .current-player {
     margin-top: 5px;
     margin-bottom: 7px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .announce-results {
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
   .restart-btn {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .homepage-btn {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .endgame {
-    font-size: 9px;
+    font-size: 14px;
     margin-top: 5px;
     margin-bottom: 7px;
   }
 
   .results-count {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   button {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
